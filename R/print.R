@@ -1,6 +1,15 @@
 # print.R
 # Print method for protein_mods objects
 
+#' print.protein_mods
+#' Print method for protein_mods pbjects
+#' 
+#' @param x variable
+#' @param ... other arguments
+#' 
+#' @export
+#' 
+#' @method print protein_mods
 print.protein_mods <- function(x, ...)
 {
   for(i in 1:dim(x)[1])

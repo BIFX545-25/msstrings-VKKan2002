@@ -3,8 +3,14 @@ Title: Extract and displaypeptide modifications from Spectronaut output
 Version: 0.0.1
 Authors@R: 
     person("Venkata Krishna", "Kandalai", , email = "vk10@hood.edu", role = c("aut", "cre"))
-Description: Extract and displaypeptide modifications from Spectronaut output.
+Description: Extract and display peptide modifications from Spectronaut output.
 License: MIT + file LICENSE
+BiocViews:
+Imports:
+  Biostrings,
+  dplyr,
+  purrr,
+  stringr
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2

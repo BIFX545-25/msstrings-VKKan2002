@@ -1,10 +1,21 @@
 # parseMSstrings.R
-# utilities for parsing MS strings
 
-# library(Biostrings) # for `AAStringSet` - BiocManager::install('Biostrings')
-# library(dplyr) # for `tibble`
-# library(purrr) # for `map` and `map_chr`
-# library(stringr) # for `str_extract_all`, `str_replace`, `str_replace_all`, and `str_split`
+#' parse_mods
+#' utilities for parsing MS strings
+#' 
+#' This string takes from spectronaur output, pulls metadata on protein
+#' modifications, and displays the data in a nice format.
+#' 
+#' @param seqs Character vector, peptide sequence from Spectronaut output
+#' @param format Character value, format of the input strings
+#' 
+#' @return A `protein_mods` object, which is a dat.frame with amino acid sequences
+#' and modification.
+#' @export
+#' @importFrom Biostrings AAStringSet
+#' @importFrom dplyr tibble
+#' @importFrom purrr map map_chr
+#' @importFrom stringr str_extract_all str_replace str_replace_all str_split
 
 parse_mods <- function(seqs, format = 'Spectronaut')
 {
